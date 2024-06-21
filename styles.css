@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    border: 5px solid red;
+    font-family: 'Quicksand', sans-serif;
+}
+
+img,
+video,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+#main-title {
+    margin: 20px 0px;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+
+.main-box,
+.main-box-2 {
+    gap: 20px;
+    width: 1200px;
+    height: 750px;
+    margin: 20px 0px;
+    border: solid 5px black;
+    border-radius: 12px;
+}
+
+/* Using Flex */
+.main-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Using Grid */
+.main-box-2 {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    grid-template-columns: repeat(3, auto);
+}
+
+#item-1,
+#item-2,
+#item-3 {
+    width: 350px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#item-1 {
+    background-color: pink;
+}
+
+#item-2 {
+    background-color: lightgreen;
+}
+
+#item-3 {
+    background-color: lightblue;
+}
